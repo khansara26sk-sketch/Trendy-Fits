@@ -1,3 +1,6 @@
+// ================================
+// PRODUCT DATA (ADD MORE HERE ONLY)
+// ================================
 const products = [
   {
     title: "Men Casual Shirt",
@@ -12,33 +15,74 @@ const products = [
     link: "https://amzn.to/3O0o8UV"
   },
   {
-    title: "Kids Party Wear",
+    title: "Kids Party Wear Dress",
     category: "kids",
     image: "images/61JkRcWSSEL._AC_UL480_FMwebp_QL65_.webp",
     link: "https://amzn.to/4qsMMep"
+  },
+
+  // 🔽 ADD MORE PRODUCTS BELOW 🔽
+  {
+    title: "Men Stylish T-Shirt",
+    category: "men",
+    image: "images/51h-BVWjULL._SY879_.jpg",
+    link: "https://amzn.to/4r3QoEV"
+  },
+  {
+    title: "Women Short Kurti",
+    category: "women",
+    image: "images/51w0bq8clpL._SY879_.jpg",
+    link: "https://amzn.to/3LZG1CN"
+  },
+  {
+    title: "Kids Fashion",
+    category: "kids",
+    image: "images/61+rr2cf65L._SX679_.jpg",
+    link: "https://amzn.to/4a1Ppiq"
   }
 ];
 
+// ================================
+// DISPLAY PRODUCTS
+// ================================
 const productContainer = document.getElementById("products");
 
-function displayProducts(filter) {
+function displayProducts(filter = "all") {
   productContainer.innerHTML = "";
 
-  products
-    .filter(p => filter === "all" || p.category === filter)
-    .forEach(product => {
-      productContainer.innerHTML += `
-        <div class="product-card">
-          <img src="${product.image}" alt="${product.title}">
-          <h3>${product.title}</h3>
-          <a href="${product.link}" target="_blank">Shop Now</a>
-        </div>
-      `;
-    });
+  const filteredProducts = filter === "all"
+    ? products
+    : products.filter(product => product.category === filter);
+
+  if (filteredProducts.length === 0) {
+    productContainer.innerHTML = "<p>No products found.</p>";
+    return;
+  }
+
+  filteredProducts.forEach(product => {
+    const productCard = document.createElement("div");
+    productCard.className = "product-card";
+
+    productCard.innerHTML = `
+      <img src="${product.image}" alt="${product.title}">
+      <h3>${product.title}</h3>
+      <a href="${product.link}" target="_blank" rel="nofollow noopener">
+        Shop Now
+      </a>
+    `;
+
+    productContainer.appendChild(productCard);
+  });
 }
 
+// ================================
+// FILTER BUTTON FUNCTION
+// ================================
 function filterProducts(category) {
   displayProducts(category);
 }
 
-displayProducts("all");
+// ================================
+// LOAD ALL PRODUCTS ON PAGE LOAD
+// ================================
+displayProducts();
