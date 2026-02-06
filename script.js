@@ -3,19 +3,19 @@ const products = [
     title: "Men Casual Shirt",
     category: "men",
     image: "images/41tGbsN3b8L._AC_UL480_FMwebp_QL65_.webp",
-    link: "https://amzn.to/YOUR-AFFILIATE-LINK"
+    link: "https://amzn.to/4knCAlR"
   },
   {
     title: "Women Summer Dress",
     category: "women",
     image: "images/616eGfn0phL._AC_UL480_FMwebp_QL65_.webp",
-    link: "https://amzn.to/YOUR-AFFILIATE-LINK"
+    link: "https://amzn.to/3O0o8UV"
   },
   {
     title: "Kids Party Wear",
     category: "kids",
     image: "images/61JkRcWSSEL._AC_UL480_FMwebp_QL65_.webp",
-    link: "https://amzn.to/YOUR-AFFILIATE-LINK"
+    link: "https://amzn.to/4qsMMep"
   }
 ];
 
