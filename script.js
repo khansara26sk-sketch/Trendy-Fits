@@ -69,6 +69,12 @@ const products = [
     category: "men",
     image: "images/61dFcpPdJkL._SY741_.jpg",
     link: "https://amzn.to/3NZiwdH"
+  },
+  {
+    title: "Mens Ice Blue Baggy Jeans",
+    category: "men",
+    image: "images/51OhPnDngwL._SY741_.jpg",
+    link: "https://amzn.to/4r5jK5J"
   }
 ];
 
