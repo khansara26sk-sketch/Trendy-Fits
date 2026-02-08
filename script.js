@@ -39,6 +39,30 @@ const products = [
     category: "kids",
     image: "images/61+rr2cf65L._SX679_.jpg",
     link: "https://amzn.to/4a1Ppiq"
+  },
+  {
+    title: "Men's Flip Pocket Jeans",
+    category: "men",
+    image: "images/61oCP4fqCDL._SY879_.jpg",
+    link: "https://amzn.to/4ko9H96"
+  },
+  {
+    title: "Women Kurta and Pants Set",
+    category: "women",
+    image: "images/71I53evweVL._SY741_.jpg",
+    link: "https://amzn.to/4r4sEQO"
+  },
+  {
+    title: "Boy's Cotton Printed T-shirt with Denim Shorts",
+    category: "kids",
+    image: "images/51Qy6ffb9IL.jpg",
+    link: "https://amzn.to/4afBOml"
+  },
+  {
+    title: "T-shirt and Short Set for Baby Boys & Baby Girls",
+    category: "kids",
+    image: "images/51jjgc9i0AL._SX679_.jpg",
+    link: "https://amzn.to/46pCCUC"
   }
 ];
 
