@@ -63,6 +63,12 @@ const products = [
     category: "kids",
     image: "images/51jjgc9i0AL._SX679_.jpg",
     link: "https://amzn.to/46pCCUC"
+  },
+   {
+    title: "Mens Regular Fit Strachable Jeans",
+    category: "men",
+    image: "images/61dFcpPdJkL._SY741_.jpg",
+    link: "https://amzn.to/3NZiwdH"
   }
 ];
 
